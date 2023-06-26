@@ -19,3 +19,10 @@ Then, add the package (assuming you pass inputs to configuration.nix or home-man
   ];
 }
 ```
+
+### Configuration
+
+I prefer to copy a full config as part of my sway setup
+```nix
+  home.file.".config/sworkstyle/config.toml".source = ./sworkstyle_config.toml;
+```
