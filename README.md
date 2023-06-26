@@ -1,6 +1,8 @@
 # sworkstyle
 nix flake for swayest_workstyle
+
 currently pinned to https://github.com/Lyr-7D1h/swayest_workstyle/releases/tag/1.3.5 
+
 commit c5d50d313c2bcd8c5eb40da487e0e76a83854eb6
 
 ### ❄️ How-to
