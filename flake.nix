@@ -1,5 +1,5 @@
 {
-  description = "Sway workspace modifier called sworkstyle (swayland_workstyle)";
+  description = "Sway workspace modifier called sworkstyle (swayland_workstyle) - packed as flake by Ogglord";
 
   inputs = {
     cargo2nix.url = "github:cargo2nix/cargo2nix/release-0.11.0";
@@ -43,9 +43,7 @@
         # this is the output (recursive) set (expressed for each system)
 
         # the packages in `nix build .#packages.<system>.<name>`
-        packages = {
-          # nix build .#hello-world
-          # nix build .#packages.x86_64-linux.hello-world
+        packages = {          
           sworkstyle = (rustPkgs.workspace.sworkstyle {}).bin;
           # nix build
           default = packages.sworkstyle; # rec
